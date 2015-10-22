@@ -1,0 +1,36 @@
+body{
+  color: #F2F2F2;
+  font-family: 'Ubuntu', sans-serif;
+}
+h1{
+  font-size: 6em;
+}
+p{
+  font-size: 2em;
+  color: #777;
+}
+.content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+button,span{
+  font-size: 4em;
+  color: #777;
+}
+label,input{
+  font-size: 3em;
+  color: #777;
+}
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .background {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
