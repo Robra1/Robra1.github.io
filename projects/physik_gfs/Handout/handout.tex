@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Robin Brase}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{through,arrows}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{30. Oktober 2015}
+\lhead{Physik-GFS}
+\chead{Handout}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+\paragraph{Rückstoßprinzip}
+\begin{flushleft}
+Gase werden nach hinten ausgestoßen $\Rightarrow $ Bewegung in entgegengesetzte Richtung (Impulserhaltungsgesetz).
+\end{flushleft}
+\paragraph{Spezifischer Impuls}
+\begin{flushleft}
+\begin{itemize}
+\item Maß für die Effizienz von Raketentriebwerken
+\item Impulsänderung pro Masseneinheit
+\item $I_{spez} = \frac{F_mt_b}{m} \qquad[\frac{\frac{kg*m}{s^2}*s}{kg} = \frac{m}{s}]$
+\end{itemize}
+\end{flushleft}
+\paragraph{Raketengleichung}
+\begin{flushleft}
+Die Raketengleichung ermöglicht die Berechnung der Endgeschwindigkeit einer Rakete, die kontinuierlich Masse ausstößt.
+$v(m) = v_g \cdot \ln \frac{m_0}{m}$\\
+$v_g$ Austrittsgeschwindigkeit der Stützmasse, $m_0$ Anfangsmasse,$m$ Endmasse
+\end{flushleft}
+\paragraph{Triebwerkarten}
+\begin{flushleft}
+\textbf{Feststoff}: einfach, billiger, hohe Schubkraft für kurzen Zeit\\ keine Kontrolle während des Fluges\\
+\textbf{Flüssigkeit}: steuerbar,längere Brennzeit, Wiederzündbar\\
+\textbf{Elektrothermisch}: erhitzen eines Gases durch Widerstände oder Lichtbögen.\\
+\textbf{Elektrostatisch}:ionisierter Stoff wird durch elektrostatisches Feld beschleunigt.\\
+\textbf{Elektromagnetisch}: Magnetfelder beschleunigen das Plasma.\\
+\textbf{Nuklear}: erhitzen durch Kernreaktion.\\
+\textbf{Solarthermisch}: erhitzen durch einen Spiegel.\\
+\textbf{Kaltgas}: ausstoßen eines Gas aus einem Druckbehälter.\\
+\end{flushleft}
+\paragraph{Hohmann-Transfer}
+Effiziente Weise, die Umlaufbahn zu ändern.\\
+Voraussetzungen:\\
+ - bestehender Orbit\\
+ - genug Treibstoff\\
+\[\Delta v_1 = \sqrt{2GM(\frac{1}{r_1}-\frac{1}{r_1+r_2})} - \sqrt{\frac{GM}{r_1}}\]
+\[\Delta v_2 = \sqrt{2GM(\frac{1}{r_2} - \frac{1}{r_1+r_2})} -\sqrt{\frac{GM}{r_2}}\]
+\begin{tikzpicture}[scale=.3]
+
+\draw (0,0) circle (0.25);
+\draw[very thick] (-2,0) arc (180:0:2);
+\draw[thick,dashed] (-2,0) arc (-180:0:2);
+
+\draw[very thick] (-2,0) arc(-180:0:4 and 3);
+\draw[thick,dashed] (-2,0) arc(180:0:4 and 3);
+
+\draw[very thick] (0,0) circle (6);
+
+\draw[->,very thick] (-2,0) -- (-2,-2) node[left]{$\Delta v_1$};
+\draw[->,very thick] (6,0) -- (6,2) node[right]{$\Delta v_2$};
+
+\draw[<->] (0,0) -- (-2,0) node[above right]{$r_1$};
+\draw[<->] (0,0) -- (6,0) node[above,near end]{$r_2$};
+\end{tikzpicture}
+\paragraph{Lagrange-Punkte}
+\begin{flushleft}
+Gravitationskräfte und Zentralkraft heben sich auf.\\
+$L_4$/$L_5$ stabil (keine Korrekturen nötig)\\
+Vorteile für die Raumfahrt:\\
+- Störfaktoren ausgeblendet(Erdatmosphäre, Erdmagnetfeld, Strahlung)\\
+- Raumsonden \glqq stehen\grqq~ relativ zur Erde\\
+\end{flushleft}
+\begin{tikzpicture}[scale=.3]
+\coordinate[label=below:$L_1$] (A) at (5,0);
+\coordinate[label=below:$L_2$] (B) at (7,0);
+\coordinate[label=below:$L_3$] (C) at (-6.5,0);
+\coordinate[label=below:$S$] (F) at (1,0);
+
+\draw[dotted] (-8,0) -- (8,0);
+
+\draw[dotted] (0,0) -- + (60:7);
+\draw[dotted] (0,0) -- + (-60:7);
+\coordinate[label=right:$L_4$] (D) at (60:6);
+\coordinate[label=right:$L_5$] (E) at (-60:6);
+\fill[black] (0,0) circle (.5);
+\fill[black] (6,0) circle (0.25);
+\fill[black] (F) circle(0.1);
+\fill[black] (A) circle (0.1);
+\fill[black] (B) circle (0.1);
+\fill[black] (C) circle (0.1);
+
+\draw (0,0) circle (6);
+
+\fill[black] (D) circle (0.1);
+\fill[black] (E) circle (0.1);
+\end{tikzpicture}
+\paragraph{Swing-By}
+\begin{flushleft}
+- Gravitation eines Planeten wird genutzt, um die Flugbahn und Geschwindigkeit einer Raumsonde zu verändern.\\
+- je nach Durchführung kann die Geschwindigkeit erhöht oder gesenkt werden.\\
+- Vergleich:\\
+Tennisspiel, trifft der Ball auf einen sich nicht bewegenden Schläger so prallt er mit der gleichen Geschwindigkeit ab (Reibung und Erdanziehung werden dabei nicht beachtet). Bewegt sich der Schläger von Ball weg, so überträgt der Ball einen Teil seiner Energie auf den Schläger. Andersherum, der Schläger bewegt sich auf den Ball zu, überträgt der Schläger einen Teil seiner Energie auf den Ball.\\
+Fliegt eine Raumsonde durch das Weltall und kommt in das Gravitationsfeld eines Planeten, der ihr entgegenkommt so wird diese Raumsonde beschleunigt. Fliegt der Planet (oder anderer Himmelskörper) von der Sonde weg, so wird diese abgebremst.
+\end{flushleft}
+\begin{itemize}
+\item Apollo 13: ausnutzen der Mondgravitation, um auf die Erde zurückzukommen.
+\item Mariner 10: Abbremsung durch Venus in einen Orbit in der Nähe des Merkur-Orbits.
+\item Voyager-Sonden: durchführen der \textit{Grand Tour} (Swing-By Manöver bei allen äußeren Planeten). Dadurch wurde die dritte kosmische Geschwindigkeit erreicht.
+\item Galileo: Gezielter Aufschlag auf dem Jupiter.
+\item Cassini: Erreichen einer Umlaufbahn um den Saturn.
+\end{itemize}
+\includegraphics[scale=.5]{qr.png} 
+\end{document}

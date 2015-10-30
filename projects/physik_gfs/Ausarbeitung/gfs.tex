@@ -1,0 +1,315 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{paralist}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{through,arrows}
+
+\author{Robin Brase}
+\title{Die Rakete zu den Planetenräumen}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{30. Oktober 2015}
+\lhead{Robin Brase}
+\chead{GFS}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+\begin{quote}
+Es stimmt, die Erde ist die Wiege der Menschheit, aber der Mensch kann nicht ewig in der Wiege bleiben. Das Sonnensystem wird unser Kindergarten.
+\end{quote}
+Dieses Zitat stammt von Konstantin Eduardowitsch Ziolkowski, einem der Begründer der Raumfahrt. Er war einer der Ersten, die sich die Frage stellte, wie Menschen ihren Heimatplaneten verlassen und zu anderen Himmelskörpern gelangen könnten.  Damit begann er die Geschichte der Raumfahrt. Eine Geschichte geprägt von technischen und menschliche Erfolgen aber auch von tragischen Katastrophen. Zur Zeiten der Mondlandung oder während der Space-Shuttle Ära gab es ein sehr großes Interesse in der Öffentlichkeit gegenüber der Raumfahrt. Diese Jahre sind jedoch vorbei. Das letzte Space-Shuttle flog vor vier Jahren und seit nunmehr  43 Jahren hat kein Mensch mehr den Mond betreten. Dass 6 Astronauten über unseren Köpfen in der ISS arbeiten geht an den meisten Leuten vorbei. Doch in den Weiten des Universum gibt es so viel zu entdecken, zu viel für eine Generation von Entdeckern. Die Erde ist begrenzt. Irgendwann wird sie uns Menschen nicht mehr genug Ressourcen bieten können. Spätestens dann müssen wir andere Planeten besiedeln. In der heutigen Raumfahrt werden die Grundlagen erforscht, es ist also keine Geldverschwendung, als die es viele ansehen, sondern vielmehr eine Investition auf sehr lange Zeit. Die Menschheit ist langsam alt genug um in den \glqq Kindergarten\grqq~ zu gehen.\\ 
+\section{Geschichte}
+\subsection{Pioniere der Raumfahrt}
+\subsubsection{Konstantin Ziolkowski}
+17. September 1857 - 19. September 1935\\
+Durch Science Fiction Geschichten inspiriert schrieb Ziolkowski selber Geschichten über Raketen(antriebe), Ganzmetallluftschiffe, Weltraumaufzüge, Raumanzüge..\\ Zu Forschungszwecken baute er den ersten Windkanal Russlands
+und entwickelte Stahlruder und Kreiselsteuerung. Er erkannte, dass die bisherigen Feststoffraketen nicht ausreichen würden, um eine Rakete in einen Erdorbit zu befördern. Seine wichtigste Errungenschaft war allerdings die Entwicklung der Raketengrundgleichung, mit der die Endgeschwindigkeit einer Rakete berechnet werden kann.
+
+\subsubsection{Walter Hohmann}
+ 18. März 1880 - 11. März 1945\\
+Walter Hohmann entwickelte die optimale Methode, mit der Raketen andere Himmelskörper erreichen können. Er machte sich auch Gedanken darüber, wie Raumschiffe wieder sicher landen können.\\
+Da er nicht an der Raktete als Waffenträger beteiligt sein wollte, entfernte er sich von der Raketentechnik
+
+\subsubsection{Robert Goddard}
+ 5. Oktober 1882 - 10. August 1945\\
+Wie schon Ziolkowski war auch Goddard seiner Zeit weit voraus, die Presse machte sich über ihn lustig als die Hypothese aufstellte, Raketen könnten Nutzlasten auf den Mond bringen. Durch den ersten erfolgreichen Start eine Rakete mit flüssigen Treibstoff bewies er, dass seine Vorstellungen durchaus realisierbar waren. Weitere Raketen trugen unter anderen wissenschaftliche Geräte und durchbrachen die Schallmauer. Viele Konzepte, wie die Kreiselsteuerung, wurden später im deutschen A4 eingesetzt. Unabhängig von Ziolkowski kam auch er zu der Raketengrundgleichung.
+
+\subsubsection{Hermann Oberth}
+25. Juni 1894 -  28. Dezember 1989\\
+In seinem Buch \glqq \textit{Die Rakete zu den Planetenräumen}\grqq ~fertigte er Formeln und erste Konstruktionsentwürfe an. Weiterhin stellte er vier Thesen auf:
+\begin{enumerate}
+\item Es ist mögliche Maschinen zu bauen, die höher als die Erdatmosphäre steigen
+\item Diese können so schnell werden, dass sie nicht wieder auf die Erde zurückfallen oder sogar deren Anziehungsbereich verlassen können
+\item Ein Mensch kann wahrscheinlich ohne gesundheitlichen Nachteil \glqq emporfahren \grqq
+\item In einigen Jahrzehnten könnte sich der Bau solcher Maschinen lohnen.
+\end{enumerate}
+Sehr viele von ihm erdachten Einsatzgebiete für Stationen sind heutzutage Realität geworden. So zum Beispiel globale Kommunikation, Erforschung der Erde, Wettervorhersagen uvm.\\
+Auch er stellte die Raketengrundgleichung auf.
+
+\subsubsection{Wernher von Braun}
+23. März 1912 - 16. Juni 1977\\
+Von Braun arbeite zusammen mit Oberth an Raketen die flüssige Treibstoffe verwendeten.\\
+Mit dem A4, besser bekannt unter der Bezeichnung V2, entwickelte er die erste Rakete, die die Grenze zum Weltraum überschritt. Das neue daran war die Kombination eines  Flüssigkeitstriebwerke mit einem Kreiselsystem, was zu einer stabileren Fluglage führte. Nach dem Krieg kam er nach Amerika, wo er ein Team zur Entwicklung neuer Raketen leitete. Dieses war grundlegend für die amerikanische Raumfahrt und machte die bemannte Mondlandung möglich.\\ 
+\section{Raketenantrieb}
+\subsection{Rückstoßprinzip}
+Raketentriebwerke basieren alle auf dem gleichen Prinzip: Gase werden mit hoher Geschwindigkeit nach \glqq \textit{hinten} \grqq ~ ausgestoßen. Da sich der Gesamtimpuls des geschlossenen Systems nicht ändern darf, muss sich die Rakete  in die entgegengesetzte Richtung bewegen. Aktuell ist dies die einzige praktikable Möglichkeit eigenständig sich im Vakuum fortzubewegen.
+\subsection{Spezifischer Impuls}
+Der spezifische Impuls ist ein Maß für die Effizienz eines Raketentriebwerkes. Er gibt an, wie groß die Impulsänderung pro Masseneinheit ist. 
+
+\begin{equation}
+I_{spez} = \frac{F_mt_b}{m} \qquad[\frac{\frac{kg*m}{s^2}*s}{kg} = \frac{m}{s}]
+\end{equation}
+Aufgrund des Atmosphärendruckes wird auf der Erde nicht der maximale Impuls erzielt, sondern ist nur im Vakuum möglich.
+\subsection{Raketengleichung}
+Die Raketengleichung ermöglicht die Berechnung der Endgeschwindigkeit einer Rakete, die kontinuierlich Masse ausstößt.
+\begin{equation}
+v(m) = v_g \cdot \ln \frac{m_0}{m}
+\end{equation}
+Dabei ist $v_g$ die Austrittsgeschwindigkeit der Stützmasse, $m_0$ die Anfangsmasse und $m$ die Endmasse.\\
+Gravitation und Luftwiderstand werden hierbei ignoriert.
+\subsection{Triebwerksarten}
+\subsubsection{Chemisch}
+Chemische Raketenantriebe erzeugen das ausströmende Gas durch Verbrennung eines Treibstoffes. Dieser kann fest oder flüssig sein, wodurch sich jeweils Vor- und Nachteile ergeben. Wichtig ist nur, dass der Treibstoff ein Oxidationsmittel enthält, um auch im Vakuum funktionieren zu können.
+\paragraph{Feststofftriebwerk} 
+Das Feststofftriebwerk ist die älteste Form eines Raketenantriebes. Dadurch, dass der Treibstoff fest ist werden keine Treibstoffleitungen oder Ventile benötigt. Der simple Aufbau sorgt für niedrigere Fehlerquoten und einen geringen Preis.  Weiterhin kann für kurze Zeit eine sehr hohe Schubkraft erreicht werden. Einmal begonnen kann das abbrennen des Treibstoffes nicht mehr gestoppt oder reguliert werden, Schubkontrolle während des Fluges ist also unmöglich. Aus diesem Grund werden feste Treibstoffe in der zivilen Raumfahrt höchstens als Booster\footnote{Hilfsrakete für den Start}  eingesetzt.\\
+Ein Beispiel hierfür wären die Feststoffraketen des STS\footnote{Space Transportation System, Space Shuttle+Booster+Externer Tank} , die  Ammoniumperchlorat, Aluminiumpulver und Eisenoxidpulver verwenden.
+\paragraph{Flüssigkeitstriebwerk}
+Beim Flüssigkeitstriebwerk werden die einzelnen Komponenten des Treibstoffes in separaten Tanks aufbewahrt und durch Treibstoffleitungen in eine Brennkammer geleitet. Diese kompliziertere Bauweise ermöglicht es, die Treibstoffzufuhr und somit den Schub zu regulieren. Gefährliche Treibstoffe und die hohen Temperaturen erfordern es, hochwertigere und teurere Materialien zu verbauen.\\
+Heutige Raketen verwenden meist Kerosin oder flüssigen Wasserstoff zusammen mit Flüssigsauerstoff.
+\subsubsection{Elektrisch}
+Bei Elektrischen Antrieben wird anstatt chemischer Energie die elektrische Energie genutzt um einen Stoff zu beschleunigen und auszustoßen. Auf Grund der niedrigen Schubkräfte eignen sich elektrische Antreibe nur für den Einsatz im Vakuum.
+\paragraph{Elektrothermisch}
+Durch elektrische Widerstände oder Lichtbögen wird das Gas erhitzt und tritt aus, um Schub zu erzeugen.
+\paragraph{Elektrostatisch}
+Der ionisierte Stoff im Inneren wird durch eine elektrostatischen Feld nach außen beschleunigt.
+\paragraph{Elektromagnetisch}
+Statt durch ein elektrostatisches Feld zu beschleunigen nutzt ein elektromagnetischer Antrieb Magnetfelder um das Plasma auszustoßen.
+\subsubsection{Nuklear}
+Ein nukleares Triebwerk erhitzt das Gas durch einen Kernreaktor. Da zum heutigen Stand der Technik noch keine Kernfusionsreaktoren gebaut wurden, wird die Energie durch Kernspaltung erzeugt. Aufgrund der hohen Gefahr für den Mensch und die Umwelt kam es zu keiner Nutzung eines solchen Antriebes.
+\subsubsection{Solarthermisch}
+Durch große Spiegel wird ein Tank mit einem Gas erhitzt, welches dadurch expandiert. Der entscheidende Faktor zur Effektivität ist hierbei die maximale Temperatur der verbauten Teile.
+\subsubsection{Kaltgas}
+Bei Kaltgastriebwerken wird ein unter Druck stehendes Gas durch eine Düse ausgestoßen. Es ist ein sehr einfache, aber nicht besonders effektive Triebwerksart.
+
+\section{Hohmann-Transfer}
+All diese Triebwerke bringen relativ wenig, wenn man nicht weiß wie man den begrenzten Treibstoff am effektivsten einsetzt. Möchte man z.B zum Mars fliegen, wäre es sehr ineffektiv zu versuchen, in einer geraden Linie zu diesem zu fliegen. Viel besser ist die von Hohmann entwickelte Methode, bei der die Umlaufbahn angehoben wird . Vorausgesetzt hierfür ist ein bereits bestehender Orbit um einen Zentralkörper. Um nun einen höheren Orbit zu erreichen muss das Raumschiff an Geschwindigkeit gewinnen(\emph{Kick 1}). Seine Umlaufbahn verändert sich zu einer einer Ellipse, deren Apoapsis\footnote{Höchster Punkt auf einer elliptischen Umlaufbahn} auf dem gewünschten Zielorbit liegt. Die Periapsis\footnote{Niedrigster Punkt auf einer elliptischen Umlaufbahn} allerdings bleibt auf der Höhe des ursprünglichen Orbits. Um nun die elliptische Umlaufbahn wieder in eine Kreisbahn zu bringen ist ein erneuter Geschwindigkeitszuwachs Notwendig(\emph{Kick 2}). Dieser erfolgt im höchsten Punkt der elliptischen Umlaufbahn in Flugrichtung.\\
+Um nun die benötigten Geschwindigkeitsänderungen ($\Delta v_1 $ /$\Delta v_2 $)für die beiden Kicks zu berechnen benötigen man zunächst die Gesamtenergie des Raumschiffes.\\
+Die potentielle Energie eines Körpers kann mit $E_{pot} = - G \frac{mM}{r} $ berechnet werden. Die Gleichung für die kinetische Energie lautet $E_{kin} = \frac{1}{2}mv^2$, für $v = \sqrt{\frac{GM}{r}}$  gilt damit: $ E_{kin} = \frac{1}{2}m \cdot \frac{GM}{r}$. 
+\\Für die Gesamtenergie eines Körpers ergibt sich daraus:
+\begin{equation}
+E_{Gesamt} = E_{pot} + E_{kin} 
+\end{equation}
+\begin{equation}
+E_{Gesamt} = - G \frac{mM}{r} + \frac{1}{2}m\frac{GM}{r} = \frac{GMm}{2r} -\frac{GMm}{r} 
+\end{equation}
+
+\begin{equation}
+E_{Gesamt} = \frac{GMm}{2r} -\frac{2GMm}{2r} = \frac{GMm - 2GMm}{2r}
+\end{equation}
+
+\begin{equation}
+E_{Gesamt} = - \frac{GMm}{2r}
+\end{equation}
+Da wir eine elliptische Bahn beschreiben wollen, muss der Radius durch die große Halbachse ($a = \frac{r_1+r_2}{2} $) ersetzt werden.
+Durch die Betrachtung der Gesamtenergie kann nun die Geschwindigkeit berechnet werden, die das Raumschiff nach der Zündung haben muss um die gewünschte Apoapsis zu erreichen. 
+
+\begin{equation}
+ E_{Ges} = E_{kin1} + E_{pot1}
+\end{equation} 
+
+\begin{equation}
+- \frac{GMm}{2 \frac{r_1+r_2}{2}} = - \frac{GMm}{r_1+r_2} = \frac{1}{2}mv_{n1}^2 - \frac{GMm}{r_1}
+\end{equation}
+Nach Umformung\footnote{Siehe Anhang} ergibt sich:
+\begin{equation}
+v_{n1} = \sqrt{2GM(\frac{1}{r_1}-\frac{1}{r_1+r_2})}
+\end{equation}
+Um auf die Geschwindigkeitsänderung zu kommen muss nun von dieser die Anfangsgeschwindigkeit abgezogen werden. Daraus ergibt sich:
+\begin{equation}
+\Delta v_1 = \sqrt{2GM(\frac{1}{r_1}-\frac{1}{r_1+r_2})} - \sqrt{\frac{GM}{r_1}}
+\end{equation}
+Um die Geschwindigkeitsänderung zu berechnen, die benötigt wird um aus der elliptischen Bahn eine Kreisbahn zu machen, kann man eine ähnliche Vorgehensweise wie oben anwenden\footnote{Komplette Herleitung im Anhang}. Daraus ergibt sich:
+\begin{equation}
+\Delta v_2 = \sqrt{2GM(\frac{1}{r_2} - \frac{1}{r_1+r_2})} -\sqrt{\frac{GM}{r_2}}
+\end{equation}
+Ist genug Treibstoff für diese beiden Geschwindigkeitsänderungen vorhanden, so kann effektiv die Umlaufbahn vergrößert werden. Um die Umlaufbahn zu verringern muss man jeweils in die entgegengesetzte Flugrichtung beschleunigen.\\\\
+
+\begin{tikzpicture}[scale=.8]
+
+\draw (0,0) circle (0.25);
+\draw[red,very thick] (-2,0) arc (180:0:2);
+\draw[red,thick,dashed] (-2,0) arc (-180:0:2);
+
+\draw[green,very thick] (-2,0) arc(-180:0:4 and 3);
+\draw[green,thick,dashed] (-2,0) arc(180:0:4 and 3);
+
+\draw[blue,very thick] (0,0) circle (6);
+
+\draw[->,very thick] (-2,0) -- (-2,-2) node[left]{$\Delta v_1$};
+\draw[->,very thick] (6,0) -- (6,2) node[right]{$\Delta v_2$};
+
+\draw[<->] (0,0) -- (-2,0) node[above right]{$r_1$};
+\draw[<->] (0,0) -- (6,0) node[above,near end]{$r_2$};
+\end{tikzpicture}
+\section{Lagrange-Punkte}
+Lagrange-Punkte sind Punkte, in denen sich die Gravitationskräfte zweier Körper und die Zentralkraft aufheben. Ein kleinere Körper, dessen Masse so  vernachlässigbar klein ist, der sich dort aufhält, befindet sich im Gleichgewicht beider Anziehungskräfte. Für alle solche Systeme gibt es fünf solcher Punkte (L$_1$...L$_5$). Da sich an diesen Punkten Satelliten nicht weg bewegen würden, sind diese Punkte für die Raumfahrt als mögliche Stellen für z.B. Weltraumteleskope interessant. 
+\subsection{L$_1$}
+Damit Körper in einer stabilen Umlaufbahn befinden können muss sich die nach außen  gerichtete Zentralkraft gleich groß sein wie die Gravitationskraft. Kreist ein Objekt auf einer niedrigeren Umlaufbahn als die Erde und hätte trotzdem die gleiche Geschwindigkeit wie die Erde(es \glqq steht\grqq ~relativ zur Erde gesehen), wäre die Zentralkraft zu klein um es auf der Umlaufbahn zu halten. In der richtigen Entfernung zur Erde allerdings ist die Anziehungskraft der Erde genau so groß, dass sie diese Differenz ausgleicht.
+\subsection{L$_2$}
+Bewegt sich das Objekt auf einer höheren Umlaufbahn, wäre die Zentralkraft zu groß um durch die Gravitationskraft der Sonne ausgeglichen zu werden. Erneut \glqq hilft\grqq ~die Erde aus und zieht das Objekt in der richtigen Entfernung so stark an, dass sich die Kräfte aufheben.
+\subsection{L$_3$}
+Im Punkt L$_3$ addieren sich die Gravitationskräfte von Sonne und Erde und gleichen die Zentralkraft aus. Da die Gravitationskraft der Erde sehr klein ist, befindet sich dieser Punkt auf der gegenüberliegenden Seite annähernd auf dem Erdorbit.
+\subsection{L$_4$/L$_5$}
+Schließlich gibt es noch zwei Punkte die nicht auf einer Gerade mit Erde und Sonne liegen. An diesen Punkten ist die resultierende Kraft aus den Gravitationskräften betragsmäßig gleich mit der Zentralkraft. Zwei Punkte, da dies auf beiden Seiten der Halbachse entsteht. Dabei ist zu beachten, dass Erde und Sonne um einen gemeinsamen Massenschwerpunkt kreisen. 
+
+\begin{tikzpicture}[scale=.8]
+\coordinate[label=below:$L_1$] (A) at (5,0);
+\coordinate[label=below:$L_2$] (B) at (7,0);
+\coordinate[label=below:$L_3$] (C) at (-6.5,0);
+\coordinate[label=below:$S$] (F) at (1,0);
+
+\draw[dotted] (-8,0) -- (8,0);
+
+\draw[dotted] (0,0) -- + (60:7);
+\draw[dotted] (0,0) -- + (-60:7);
+\coordinate[label=right:$L_4$] (D) at (60:6);
+\coordinate[label=right:$L_5$] (E) at (-60:6);
+\fill[Dandelion] (0,0) circle (.5);
+\fill[blue] (6,0) circle (0.25);
+\fill (F) circle(0.1);
+\fill[OliveGreen] (A) circle (0.1);
+\fill[OliveGreen] (B) circle (0.1);
+\fill[OliveGreen] (C) circle (0.1);
+
+\draw (0,0) circle (6);
+
+
+
+\fill[OliveGreen] (D) circle (0.1);
+\fill[OliveGreen] (E) circle (0.1);
+\end{tikzpicture}
+\newpage
+\subsection{Anwendung}
+Im L$_1$ ist die Sonnenbeobachtungssonde SOHO platziert. Dieser Punkt ist optimal, da sich die Sonde dort relativ zu Erde nicht bewegt und außerdem direkt auf die Sonne blicken kann. L$_2$ eignet sich gut für Teleskope wie Herschel und Planck. Dort werden Störfaktoren der Erde(Atmosphäre bzw. Magnetfeld) und Sonne(Licht,Strahlung,...) größtenteils ausgeschaltet, sodass besser Bilder und Messungen der kosmischen Hintergrundstrahlung möglich sind. L$_3$ ist für Sonden aufgrund der unmöglichen Kommunikation ungeeignet. Im Gegensatz zu den anderen Punkten sind L$_4$ und L$_5$ stabil, d.h. man braucht überhaupt keine Manöver, um die Position zu halten (bei den anderen sind kleinere Korrekturen nötig). Bei einigen Planeten sammeln sich in diesen Punkten deshalb Staubwolken. Asteroiden, die sich dort aufhalten, werden als Trojaner bezeichnet.
+\section{Swing-By}
+Bei einem Swing-By-Manöver wird die Gravitation eines Planeten genutzt, um die Flugbahn und Geschwindigkeit einer Raumsonde zu verändern. Je nach Durchführung kann die Geschwindigkeit erhöht oder gesenkt werden.
+Die Zeit zum Zielobjekt muss sich dabei nicht verkürzen, da meist Umwege geflogen werden müssen.\\
+Die Energieübertragung lässt sich mit einem Tennisspiel vergleichen. Trifft der Ball auf einen sich nicht bewegenden Schläger so prallt er mit der gleichen Geschwindigkeit ab (Reibung und Erdanziehung werden dabei nicht beachtet). Bewegt sich der Schläger von Ball weg, so überträgt der Ball einen Teil seiner Energie auf den Schläger. Andersherum, der Schläger bewegt sich auf den Ball zu, überträgt der Schläger einen Teil seiner Energie auf den Ball.\\
+Fliegt eine Raumsonde durch das Weltall und kommt in das Gravitationsfeld eines Planeten, der ihr entgegenkommt so wird diese Raumsonde beschleunigt. Fliegt der Planet (oder anderer Himmelskörper) von der Sonde weg, so wird diese abgebremst. 
+\subsection{Beispiele}
+\begin{itemize}
+\item Apollo 13: ausnutzen der Mondgravitation, um auf die Erde zurückzukommen.
+\item Mariner 10: Abbremsung durch Venus in einen Orbit in der Nähe des Merkur-Orbits.
+\item Voyager-Sonden: durchführen der \textit{Grand Tour} (Swing-By Manöver bei allen äußeren Planeten). Dadurch wurde die dritte kosmische Geschwindigkeit erreicht.
+\item Galileo: Gezielter Aufschlag auf dem Jupiter.
+\item Cassini: Erreichen einer Umlaufbahn um den Saturn.
+\end{itemize}
+\newpage
+\section{Anhang}
+\subsection{Komplette Herleitung des Hohmann-Transfers}
+\subsubsection{$ \Delta v_1$}
+\[
+\begin{aligned} 
+E_{Ges} = E_{kin1} + E_{pot1}\\
+-\frac{GMm}{2\frac{r_1+r_2}{2} } = \frac{1}{2}mv^2_{n1} - \frac{GMm}{r_1}\\
+-\frac{GMm}{r_1+r_2}= \frac{1}{2} mv^2_{n1} - \frac{GMm}{r_1} & \qquad| + \frac{GMm}{r_1}\\
+\frac{1}{2} mv^2_{n1} = \frac{GMm}{r_1} -\frac{GMm}{r_1+r_2} & \qquad| \div \frac{1}{2}m\\
+v^2_{n1} = \frac{2GM}{r_1} - \frac{2GM}{r_1+r_2} & \qquad|\surd \\
+v_{n1} = \sqrt{\frac{2GM}{r_1} - \frac{2GM}{r_1+r_2}}\\
+v_{n1} = \sqrt{2GM(\frac{1}{r_1} - \frac{1}{r_1+r_2}) }\\
+\\
+\Delta v_1 = v_{n1} - v_{alt1}\\
+\Delta v_1 = \sqrt{2GM(\frac{1}{r_1} - \frac{1}{r_1+r_2})} - \sqrt{\frac{GM}{r_1}} 
+\end{aligned} \]
+\subsubsection{$ \Delta v_2$}
+\[\begin{aligned} 
+E_{Ges} = E_{kin2} + E_{pot2}\\
+-\frac{GMm}{2\frac{r_1+r_2}{2} } = \frac{1}{2}mv^2_{n2} - \frac{GMm}{r_2}\\
+-\frac{GMm}{r_1+r_2}= \frac{1}{2} mv^2_{n2} - \frac{GMm}{r_2} & \qquad | + \frac{GMm}{r_2}\\
+\frac{1}{2} mv^2_{n2} = \frac{GMm}{r_2} -\frac{GMm}{r_1+r_2} & \qquad | \div \frac{1}{2}m\\
+v^2_{n2} = \frac{2GM}{r_2} - \frac{2GM}{r_1+r_2} & \qquad|\surd \\
+v_{n2} = \sqrt{\frac{2GM}{r_2} - \frac{2GM}{r_1+r_2}}\\
+v_{n2} = \sqrt{2GM(\frac{1}{r_2} - \frac{1}{r_1+r_2}) }\\
+\\
+\Delta v_2 = v_{n2} - v_{alt21}\\
+\Delta v_2 = \sqrt{2GM(\frac{1}{r_2} - \frac{1}{r_1+r_2})} - \sqrt{\frac{GM}{r_2}} 
+\end{aligned} \]
+\newpage
+\section{Quellen}
+Alle Quellen wurden zuletzt am 29.10.2015 aufgerufen. Bei mit \verb![E]! markierten Wikipedia-Artikel wurde zusätzlich der englischsprachige Artikel zur Recherche genutzt. 
+\begin{compactitem}
+\item \verb!https://de.wikipedia.org/wiki/!  
+\begin{compactitem}
+\item \verb!Konstantin_Eduardowitsch_Ziolkowski!
+\item \verb!Hermann_Oberth [E]!
+\item \verb!Robert_Goddard [E]!
+\item \verb!Wege_zur_Raumschiffahrt!
+\item \verb!Walter_Hohmann [E]!
+\item \verb!Raketentriebwerk [E]!
+\item \verb!Flüssigkeitsraketentriebwerk!
+\item \verb!Feststoffraketentriebwerk!
+\item \verb!Elektrisches_Raketentriebwerk!
+\item \verb!Raketentreibstoff!
+\item \verb!Hohmann-Transfer!
+\item \verb!Apsis_(Astronomie)!
+\item \verb!Lagrange-Punkte!
+\item \verb!Herschel-Weltraumteleskop!
+\item \verb!Planck-Weltraumteleskop!
+\item \verb!Swing-by[E]!
+\item \verb!Raketengrundgleichung!
+\item \verb!Spezifischer_Impuls!
+\end{compactitem}
+\item \verb!http://www.spektrum.de/lexikon/physik/ziolkowski/15858!
+\item \verb!https://www.lernhelfer.de/schuelerlexikon/physik-abitur/artikel/!
+\begin{compactitem}
+\item \verb!konstantin-eduardowitsch-ziolkowski!
+\item \verb!raketenantrieb-und-raketengrundgleichung!
+\end{compactitem}
+\item \verb!http://abenteuer-universum.de/technik/raumfahrt1.html!
+\item \verb!http://www.nasa.gov/centers/goddard/about/history/dr_goddard.html!
+\item \verb!https://www.nasa.gov/audience/foreducators/rocketry/home/hermann-oberth.html!
+\item \verb!https://solarsystem.nasa.gov/basics/bsf4-1.php!
+\item \verb!http://www.esa.int/ger/ESA_in_your_country/Germany/!
+
+\verb!Exklusiver_Beobachtungsplatz_fuer_Astronomen!
+\item \verb!http://pioneersofflight.si.edu/content/walter-hohmann-0!
+\item \verb!https://historischesportal.essen.de/historischesportal_namen/friedhof/!
+
+\verb!friedhofsfuehrer/friedhofsfuehrer_detailseite_876881.de.html!
+\item \verb!http://www.zeit.de/wissen/geschichte/2012-03/wernher-von-braun!
+\item \verb!http://www.raumfahrer.net/forum/smf/index.php?topic=1022.0!
+\item \verb!http://www.raumfahrer.net/raumfahrt/raketen/nuklear2.shtml!
+\item \verb!http://www.dglr.de/?id=2480!
+\item \verb!http://www.bernd-leitenberger.de/nukleare-antriebe.shtml!
+\item \verb!http://www.bernd-leitenberger.de/swingby.shtml!
+\item \verb!http://rakete-nwt.de.tl/Spezielle-Raketentriebwerke.htm!
+\item \verb!http://www.patent-de.com/20040930/DE10311010A1.html!
+\item \verb!http://www.mabo-physik.de/hohmantransfer_info.pdf!
+\item \verb!http://www.mabo-physik.de/die_lagrangepunkte_im_system_erde.pdf!
+\item \verb!http://www.scilogs.de/go-for-launch/lagrange1/!
+\item \verb!http://www.gym-vaterstetten.de/faecher/astro/Raumfahrt/Raumfahrt.htm!
+\item \verb!http://astrokramkiste.de/swing-by!
+\item \verb!http://www.bernd-leitenberger.de/raumfahrtbegriffe.shtml!
+\end{compactitem}
+\section{Blatt-Leistungsnachweis}
+\newpage
+\section{Eidesstattliche Erklärung}
+\newpage
+\section{Handout}
+\end{document}

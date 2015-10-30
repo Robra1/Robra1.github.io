@@ -21,6 +21,14 @@
   color: #000;
   opacity: 0.7;
 }
+#section1 a{
+  color: #000;
+  opacity: 0.7;
+}
+#section1 a:hover{
+  color: #000;
+  opacity: 0.9;
+}
 #section1 p{
   color: #000;
   opacity: 0.6;

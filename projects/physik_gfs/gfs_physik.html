@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Die Rakete zu den Planetenräumen</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/DmitryBaranovskiy/raphael/master/raphael.js"></script>
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+  <div id="startbild" class="step" data-x="-1000" data-y="-1500" data-scale="1.5">
+    <img width="1000" src="pictures/rocket-launch-67646.jpg"/>
+  </div>
+
+    <div id="start" class="step multi" data-x="-1000" data-y="-1500">
+        <h1><a href="projects/physik_gfs/gfs_physik.html">Die Rakete zu den Planetenräumen<a></h1>
+    </div>
+
+    <div id="inhalt" class="step" data-x="-1000" data-y="-400">
+      <table>
+        <tr><td>Inhalt</td></tr>
+        <tr><td>-</td><td>Pioniere der Raumfahrt</td></tr>
+        <tr><td>-</td><td>Raketeantrieb</td></tr>
+        <tr><td>-</td><td>Hohmann-Transfer</td></tr>
+        <tr><td>-</td><td>Lagrange-Punkte</td></tr>
+        <tr><td>-</td><td>Swing-By</td></tr>
+      </table>
+    </div>
+
+    <div id="s2-1-1" class="step" data-x="0" data-y="0">
+      <h1>Konstantin Ziolkowski (1857-1935)</h1>
+      <p>
+        - inspieriert durch SciFi</br>
+        - schrieb selber Geschichten</br>
+        - erster Windkanal Russlands</br>
+        - Strahlruder</br>
+        - Kreiselsteuerung</br>
+        <b>- Raketengleichung</b>
+      </p>
+    </div>
+    <div id="s2-1-2" class="step" data-x="1000" data-y="0">
+      <h1>Walter Hohmann (1880-1945)</h1>
+      <p>
+        - <b>Hohmann-Transfer</b></br>
+        - machte sich Gedanken über die Rückkehr</br>
+        - wollte keine Waffen entwickeln
+      </p>
+    </div>
+    <div id="s2-1-3" class="step" data-x="2000" data-y="0">
+      <h1>Robert Goddard (1882-1945)</h1>
+      <p>
+        - "Raketen können Nutzlasten auf den Mond bringen"</br>
+        - erfolgreicher Start einer Rakete mit flüssigen Treibstoff</br>
+        - wissenschaftliche Geräte</br>
+        - duchbrechen der Schallmauer</br>
+      </p>
+    </div>
+    <div id="s2-1-4" class="step" data-x="3000" data-y="0">
+      <h1>Hermann Oberth (1894-1989)</h1>
+      <p>
+        - höher als die Erdatmosphäre steigen</br>
+        - nicht auf die Erde zurückfallen</br>
+        - ungefährlich für den Mensch</br>
+        - Bau könnte sich lohnen</br>
+      </p>
+    </div>
+    <div id="s2-1-5" class="step multi" data-x="4000" data-y="0">
+      <h1>Wernher von Braun (1912-1977)</h1>
+      <p>
+        - Entwicklung des A4(V2)</br>
+      </p>
+    </div>
+    <div id="s2-1-5bild1" class="step" data-x="4500" data-y="0" data-z="1000">
+      <a href="https://de.wikipedia.org/wiki/Datei:Bundesarchiv_RH8II_Bild-B0788-42_BSM,_Peenem%C3%BCnde,_Startvorbereitungen_V2.jpg">
+        <img src="pictures/427px-Bundesarchiv_RH8II_Bild-B0788-42_BSM,_Peenemünde,_Startvorbereitungen_V2.jpg" width="500"></img>
+      </a>
+    </div>
+    <div id="s2-1-52" class="step multi" data-x="4000" data-y="0">
+      <h1>Wernher von Braun (1912-1977)</h1>
+      <p>
+        - Entwicklung des A4(V2)</br>
+        - wichtig für die amerikanische Raumfahrt</br>
+      </p>
+    </div>
+    <div id="s2-1-5bild2" class="step" data-x="5000" data-y="0" data-z="2000">
+      <img src="pictures/Apollo_4_on_the_night_before_launch,_Kennedy_Space_Center,_Florida,_1967.jpg" width="600" ></img>
+    </div>
+
+    <div id="s3-1" class="step" data-x="0" data-y="1500">
+      <h1>Rückstoßprinzip</h1>
+      <img src="pictures/rocket-launch-693273.jpg" width="1000" ></img>
+    </div>
+
+    <div id="s3-2" class="step" data-x="1000" data-y="1500">
+      <h1>Spezifischer Impuls</h1>
+      <span id="eq"></br>$I_{spez} = \frac{F_mt_b}{m}$</br></span>
+    </div>
+
+    <div id="s3-2daten" class="step" data-x="1000" data-y="1500" data-z="1000">
+      <table>
+        <tr><td>F-1</td>          <td>$\quad$</td><td>$2550\frac{m}{s}$</td></tr>
+        <tr><td>Vulcain 2</td>    <td>$\quad$</td><td>$4207\frac{m}{s}$</td></tr>
+        <tr><td>STS-Booster</td>  <td>$\quad$</td><td>$2372,5\frac{m}{s}$</td></tr>
+      </table>
+    </div>
+
+    <div id="s3-3" class="step" data-x="3000" data-y="1500">
+      <h1>Raketengrundgleichung</h1>
+      <span id="eq"></br>$v(m) = v_g \cdot \ln \frac{m_0}{m}$</br></span>
+    </div>
+
+    <div id="s3-4" class="step" data-x="0" data-y="3000">
+      <h1>Triebwerksarten</h1>
+    </div>
+
+    <div id="s3-4-1" class="step" data-x="-200" data-y="3300">
+      <h1>Chemisch</h1>
+    </div>
+
+    <div id="s3-4-1fest" class="step" data-x="-700" data-y="3700">
+      <h1>Feststoff</h1>
+      <p class="pro">+ einfache Bauweise</br></p>
+      <p class="pro">+ wenige Fehler</br></p>
+      <p class="pro">+ niedriger Preis</br></p>
+      <p class="pro">+ hohe Schubkraft für kurze Zeit</br></p>
+      <p class="con">- kann nicht gestoppt werden</br></p>
+      <p class="con">- keine Schubkontrolle im Flug</br></p>
+      <p class="con"></br></p>
+    </div>
+    <div id="s3-4-1festbild" class="step multi" data-x="-900" data-y="3700" data-z="1000">
+      <img src="pictures/768px-Static_Test_Firing_DM-2_for_Solid_Rocket_Booster_-_GPN-2000-000053.jpg"/>
+    </div>
+
+    <div id="s3-4-1fluessig" class="step" data-x="00" data-y="3700">
+      <h1>Flüssigkeit</h1>
+      <p class="pro">+ Schubregulierung</br></p>
+      <p class="pro">+ lange Brennzeit</br></p>
+      <p class="pro">+ wiederzündbar</br></p>
+      <p class="pro">+ leichtere Wiederverwendung</br></p>
+      <p class="con">- Gefährliche Treibstoffe</br></p>
+      <p class="con">- hohe Temperaturen</br></p>
+      <p class="con">- komplex</p>
+    </div>
+    <div id="s3-4-1fluessigbild" class="step" data-x="00" data-y="3700" data-z="2000">
+      <img src="pictures/S-IC_engines_and_Von_Braun.jpg" height="700"/>
+    </div>
+
+    <div id="s3-4-1video" class="step multi" data-x="00" data-y="3700" data-z="-3000">
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/OnoNITE-CLc?rel=0&start=10&end=220" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="s3-4-2" class="step" data-x="1000" data-y="3300">
+      <h1>Elektrisch</h1>
+      <p class="pro">+ hoher spezifischer Impuls</p>
+      <p class="con">- niedriger Schub</p>
+    </div>
+    <div id="s3-4-21" class="step" data-x="1000" data-y="3500">
+      <h1>Elektrothermisch</h1>
+      <p>Erhitzen eines Gases durch Widerstände oder Lichtbögen</p>
+    </div>
+    <div id="s3-4-22bild" class="step" data-x="1000" data-y="3700">
+      <h1>Elektrostatisch</h1>
+      <p>ionisierter Stoff wird durch elektrostatisches Feld beschleunigt</p>
+    </div>
+    <div id="s3-4-22" class="step multi" data-x="1000" data-y="3700" data-z="1000">
+      <img src="pictures/761px-Ion_Engine_Test_Firing_-_GPN-2000-000482.jpg"/>
+    </div>
+    <div id="s3-4-23" class="step" data-x="1000" data-y="3900">
+      <h1>Elektromagnetisch</h1>
+      <p>Magnetfelder beschleunigen ein Plasma</p>
+    </div>
+    <div id="s3-4-3" class="step" data-x="2000" data-y="3300">
+      <h1>Nuklear</h1>
+      <p> Erhitzen eines Gases durch Kernkraft</p>
+      <p class="con">- hohe Gefahr</p>
+    </div>
+
+    <div id="s3-4-4" class="step" data-x="3000" data-y="3300">
+      <h1>Solarthermisch</h1>
+      <p>
+        - Spiegel reflektiert Licht auf einen Tank</br>
+        - Gas wird erhitzt
+      </p>
+    </div>
+
+    <div id="s3-4-5" class="step" data-x="4000" data-y="3300">
+      <h1>Kaltgas</h1>
+      <p>- Gas wird aus einem Druckbehälter ausgestoßen</p>
+      <p class="pro"> + einfach</p>
+      <p class="con"> - nicht besonders effektiv</p>
+    </div>
+
+    <div id="s4" class="step multi" data-x="0" data-y="5000">
+      <h1>Hohmann-Transfer</h1>
+      <img src="pictures/0001.png" width="700"/>
+    </div>
+
+    <div id="s41" class="step multi" data-x="0" data-y="5000" data-z="1000">
+      <h1>Gesamtenergie</h1>
+      <p>
+        $E_{Gesamt} = E_{pot} + E_{kin} $</br>
+        </br>
+        $E_{pot} = - G \frac{Mm}{r} $</br>
+        </br>
+        $E_{kin} = \frac{1}{2}mv^2 \quad v = \sqrt{\frac{GM}{r}}$
+        $\Rightarrow E_{kin} = \frac{1}{2}m \frac{GM}{r}$</br>
+      </p>
+    </div>
+    <div id="s41" class="step multi" data-x="0" data-y="5000" data-z="1000">
+      <h1>Gesamtenergie</h1>
+      <p>
+        $E_{Gesamt} = E_{pot} + E_{kin} $</br></br>
+        $E_{Gesamt} = - G \frac{mM}{r} + \frac{1}{2}m\frac{GM}{r} = \frac{GMm}{2r} -\frac{GMm}{r}$</br></br>
+        $E_{Gesamt} = \frac{GMm}{2r} -\frac{2GMm}{2r} = \frac{GMm - 2GMm}{2r}$</br></br>
+        $E_{Gesamt} = - \frac{GMm}{2r}$</br>
+      </p>
+    </div>
+
+    <div id="s4a" class="step multi" data-x="200" data-y="5000" data-z="1000">
+      <h1>Halbachse</h1>
+      <p>
+        $a =\frac{r_1+r_2}{2}$</br>
+        $\Rightarrow E_{Gesamt}= - \frac{GMm}{2 \frac{r_1+r_2}{2}} = - \frac{GMm}{r_1+r_2} $</br>
+      </p>
+    </div>
+
+    <div id="s4v1" class="step multi" data-x="1000" data-y="5000">
+      <h1>$\Delta v_1$</h1>
+      <p>
+        $E_{Gesamt1} = E_{pot1} + E_{kin1} $</br></br>
+        <table>
+          <tr><td>$-\frac{GMm}{r_1+r_2}= \frac{1}{2} mv^2_{n1} - \frac{GMm}{r_1} \qquad$</td><td>$| + \frac{GMm}{r_1}$</td></tr>
+          <tr><td></br></td></tr>
+          <tr><td>$\frac{1}{2} mv^2_{n1} = \frac{GMm}{r_1} -\frac{GMm}{r_1+r_2} \qquad$</td><td>$| \div \frac{1}{2}m$</td></tr>
+          <tr><td></br></td></tr>
+          <tr><td>$v^2_{n1} = \frac{2GM}{r_1} - \frac{2GM}{r_1+r_2} \qquad$</td><td>$|\surd$</td></tr>
+          <tr><td></br></td></tr>
+          <tr><td>$v_{n1} = \sqrt{\frac{2GM}{r_1} - \frac{2GM}{r_1+r_2}} = \sqrt{2GM(\frac{1}{r_1} - \frac{1}{r_1+r_2}) }$</td></tr>
+
+        </table>
+      </p>
+    </div>
+    <div id="s4v12" class="step multi" data-x="1000" data-y="5000">
+      <p>
+        $\Delta v_1 = v_{n1} - v_{alt1}$</br></br>
+        $\Delta v_1 = \sqrt{2GM(\frac{1}{r_1} - \frac{1}{r_1+r_2})} - \sqrt{\frac{GM}{r_1}}$
+      </p>
+    </div>
+
+    <div id="s4v2" class="step multi" data-x="1000" data-y="5250">
+      <h1>$\Delta v_2$</h1>
+      <p>
+        $\Delta v_2 = \sqrt{2GM(\frac{1}{r_2} - \frac{1}{r_1+r_2})} - \sqrt{\frac{GM}{r_2}}$
+      </p>
+    </div>
+
+    <div id="s5" class="step" data-x="0" data-y="6000">
+      <h1>Lagrange-Punkte $L_1$...$L_5$</h1>
+      <img src="pictures/0001 (3).png" width="700">
+    </div>
+
+    <div id="s5-1" class="step multi" data-x="0" data-y="6000" data-z="1000">
+      <a href="https://commons.wikimedia.org/wiki/File%3ANASA_SOHO_spacecraft.png">
+        <img width="900" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/NASA_SOHO_spacecraft.png">
+      </a>
+    </div>
+
+    <div id="s5-2" class="step multi" data-x="0" data-y="6000" data-z="2000">
+      <a  href="https://commons.wikimedia.org/wiki/File%3AMaquette_Herschel_salon_du_Bourget_2013_DSC_0217.JPG">
+        <img  width="1250"src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Maquette_Herschel_salon_du_Bourget_2013_DSC_0217.JPG"/>
+      </a>
+    </div>
+
+    <div id="s6" class="step" data-x="0" data-y="7300">
+      <h1>Swing By</h1>
+      <a href="https://commons.wikimedia.org/wiki/File%3AGravity_assist_moving_Jupiter.svg"><img width="512"src="pictures/Gravity_assist_moving_Jupiter.svg.png"/>
+      </a>
+    </div>
+    <div id="s6-1" class="step" data-x="1000" data-y="7300">
+      <h1>Swing By</h1>
+      <table>
+        <p>
+          - Apollo 13: ausnutzen der Mondgravitation, um auf die Erde zurückzukommen.</br>
+          - Mariner 10: Abbremsung durch Venus in einen Orbit in der Nähe des Merkur-Orbits.</br>
+          - Voyager-Sonden: durchführen der Grand Tour</br>
+          - Galileo: Gezielter Aufschlag auf dem Jupiter.</br>
+          - Cassini: Erreichen einer Umlaufbahn um den Saturn.</br>
+      </p>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+
+    </div>
+
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
